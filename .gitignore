@@ -1,3 +1,5 @@
 *.swp
 .netrwhist
+tmp/backup/*
+tmp/swap/*
 
