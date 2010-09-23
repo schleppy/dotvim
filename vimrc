@@ -1,3 +1,10 @@
+if version >= 700
+	" Pathogen (http://github.com/tpope/vim-pathogen)
+	call pathogen#runtime_append_all_bundles() 
+endif
+
+
+" Basics
 filetype off
 if has("autocmd")
         filetype plugin indent on
@@ -33,8 +40,8 @@ if version >= 730
 endif
 
 " Use Perl-style regexp
-nnoremap / /\v
-vnoremap / /\v
+"nnoremap / /\v
+"vnoremap / /\v
 
 " Searching
 set ignorecase
@@ -66,6 +73,10 @@ endif
 
 " Any GUI
 if has("gui_running")
+	" General GUI options
+	" default macvim: egmrLtT
+	set guioptions=aermLt
+	
 	" Set font
 	if has("macvim")
 		set guifont=Monaco:h12
@@ -74,6 +85,8 @@ if has("gui_running")
 	else
 		" What font to set for Windows or Linux?
 	endif
+	
+	" Screen size
 	set lines=50 columns=120
 endif
 
@@ -96,4 +109,8 @@ nnoremap <leader>v V`]
 
 " Open .vimrc in split window
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+" Open a new split window
+nnoremap <leader>w <C-w>v<C-w>l
+
 
