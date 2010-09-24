@@ -121,4 +121,6 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Open a new split window
 nnoremap <leader>w <C-w>v<C-w>l
 
+" Sudo to write file
+cmap w!! w !sudo tee % > /dev/null
 
