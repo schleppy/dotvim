@@ -72,30 +72,9 @@ set formatoptions=croqln
 "macvim default: croql
 
 " Color Display
-if &t_Co > 2 || has("gui_running")
-	colorscheme torte
-	if version >= 730
-		set colorcolumn=80
-	endif
-endif
-
-" Any GUI
-if has("gui_running")
-	" General GUI options
-	" default macvim: egmrLtT
-	set guioptions=aermLt
-	
-	" Set font
-	if has("macvim")
-		set guifont=Monaco:h12
-	elseif has("mac")
-		set guifont=Monaco:h12
-	else
-		" What font to set for Windows or Linux?
-	endif
-	
-	" Screen size
-	set lines=50 columns=120
+colorscheme delek
+if version >= 730
+	set colorcolumn=80
 endif
 
 " Custom commands
@@ -123,4 +102,28 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 " Sudo to write file
 cmap w!! w !sudo tee % > /dev/null
+
+" NERD Tree
+map <F2> :NERDTreeToggle<cr>
+let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
+
+" GUI
+if has("gui_running")
+	colorscheme torte
+
+	" default macvim: egmrLtT
+	set guioptions=aermLt
+	
+	" Set font
+	if has("macvim")
+		set guifont=Monaco:h12
+	elseif has("mac")
+		set guifont=Monaco:h12
+	else
+		" What font to set for Windows or Linux?
+	endif
+	
+	" Screen size
+	set lines=50 columns=120
+endif
 
