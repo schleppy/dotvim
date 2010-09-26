@@ -127,3 +127,7 @@ if has("gui_running")
 	set lines=50 columns=120
 endif
 
+if filereadable("vimrc.local")
+	source vimrc.local
+endif
+

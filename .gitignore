@@ -2,4 +2,5 @@
 .netrwhist
 tmp/backup/*
 tmp/swap/*
+vimrc.local
 
