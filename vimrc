@@ -103,6 +103,9 @@ nnoremap <leader>w <C-w>v<C-w>l
 " Sudo to write file
 cmap w!! w !sudo tee % > /dev/null
 
+" Change to file's directory
+nmap <silent> <leader>cd :cd %:p:h<cr>
+
 " NERD Tree
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
