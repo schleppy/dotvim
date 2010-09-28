@@ -16,3 +16,6 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = http://github.com/vim-scripts/molokai.git
+[submodule "bundle/vim-vividchalk"]
+	path = bundle/vim-vividchalk
+	url = http://github.com/tpope/vim-vividchalk.git
