@@ -1,5 +1,6 @@
 if version >= 700
 	" Pathogen (http://github.com/tpope/vim-pathogen)
+	call pathogen#helptags()
 	call pathogen#runtime_append_all_bundles() 
 endif
 
