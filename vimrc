@@ -111,6 +111,12 @@ nmap <silent> <leader>cd :cd %:p:h<cr>
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
+" Taglist
+" Note: May be necessary to override Tlist_Ctags_Cmd to point to a working
+" ctags. If so, override the next line in vimrc.local.
+" let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+nmap <silent> <F3> :TlistToggle<cr>
+
 " GUI
 if has("gui_running")
 	colorscheme torte
