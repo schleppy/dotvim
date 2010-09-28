@@ -10,3 +10,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = http://github.com/clones/vim-taglist.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = http://github.com/tpope/vim-markdown.git
