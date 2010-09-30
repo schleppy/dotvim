@@ -6,7 +6,7 @@ endif
 
 
 " Basics
-filetype off
+"filetype off
 if has("autocmd")
         filetype plugin indent on
 endif
@@ -105,7 +105,7 @@ nnoremap <leader>w <C-w>v<C-w>l
 cmap w!! w !sudo tee % > /dev/null
 
 " Change to file's directory
-nmap <silent> <leader>cd :cd %:p:h<cr>
+"nmap <silent> <leader>cd :cd %:p:h<cr>
 
 " NERD Tree
 map <F2> :NERDTreeToggle<cr>
