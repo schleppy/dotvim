@@ -25,3 +25,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = http://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = http://github.com/vim-scripts/minibufexpl.vim.git
