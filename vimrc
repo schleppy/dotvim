@@ -57,7 +57,7 @@ set ignorecase
 set smartcase
 set incsearch
 set showmatch
-set hlsearch
+set nohlsearch
 
 " Clear search by <leader><space>
 nnoremap <leader><space> :let @/=''<cr>
